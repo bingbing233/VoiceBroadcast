@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="常规设置">
+        <Preference
+            android:key="permission"
+            android:title="开启使用通知权限"
+            android:summary="首次打开请开启此权限"/>
+        <SwitchPreference
+            android:key="toast"
+            android:title="Toast通知"/>
+    </PreferenceCategory>
+</PreferenceScreen>
