@@ -30,14 +30,15 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:gravity="left"
-                android:textSize="20dp"
+                android:textSize="20sp"
+                android:textColor="#000"
                 tools:text="app_name" />
             <TextView
                 android:layout_marginLeft="20dp"
                 android:layout_weight="1"
                 android:layout_gravity="center_horizontal"
                 android:gravity="left"
-                android:textSize="16dp"
+                android:textSize="18sp"
                 tools:text="packageName"
                 android:id="@+id/package_name"
                 android:layout_width="match_parent"

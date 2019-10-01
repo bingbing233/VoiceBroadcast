@@ -9,5 +9,9 @@
         <SwitchPreference
             android:key="toast"
             android:title="Toast通知"/>
+        <SwitchPreference
+            android:key="startService"
+            android:title="开启播报服务"/>
     </PreferenceCategory>
+
 </PreferenceScreen>

@@ -49,9 +49,15 @@ public class MyNotifyService extends NotificationListenerService  {
             Toast.makeText(this,title,Toast.LENGTH_SHORT).show();
         }
         SharedPreferences preferences = getSharedPreferences("data",MODE_PRIVATE);
-        if(preferences.getBoolean(sbn.getPackageName(),false)){
-            initTTS();
+        SharedPreferences preferences1 = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        //判断是否播报
+        if(preferences1.getBoolean("startService",false)){
+            //判断是否添加播报
+            if(preferences.getBoolean(sbn.getPackageName(),false)){
+                initTTS();
+            }
         }
+
 
 
     }
